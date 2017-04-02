@@ -1,0 +1,5 @@
+CTRL + E		Elimina toda una línea de código
+CTRL + ESPACIO		Muestra las sugerencias de autocompletar
+"sout" + TAB		Coloca una línea de println
+CTRL + SHIFT + DOWN	Copia y pega una línea que se encuentra arriba
+CTRL + R		Reemplaza el texto a donde encuentre coincidencia
