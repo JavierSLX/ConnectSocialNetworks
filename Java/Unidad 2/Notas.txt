@@ -1,0 +1,30 @@
+------------- LECCION 1 --------------
+
+>> SALIDAS
+> STREAM se refiere al flujo de entrada y salida de los datos.
+
+>> ENTRADAS
+> Flujo de entrada (Imputstring)
+> System.in. Entrada de datos.
+> import java.util.Scanner; (Manda llamar la clase Scanner)
+	ejemplo scanner teclado = new scanner(System.in);
+> Métodos de scanner
+	- nextShort(), nextInt(), nextDouble(), nextLine().
+	scanner.close() (?)
+
+>> JOptionPane (Forma de entrada y salida gráfica)
+> Clase de biblioteca Javax.swing
+> String mensaje = JOptionPane.showInputDialog(null, "mensaje");
+> JOptionPane.showMessageDialog(null, "mensaje");
+
+------------- LECCION 2 --------------
+
+>> Operadores (Aritméticos, asignación, relacionales, lógicos, incremento o decremento)
+> Aritméticos. +, -, *, /, %.
+> Asignación. +=, -=, *=, /=, %=.
+
+------------- LECCION 3 --------------
+
+>> Condicional if-else
+> Integer.parseInt(string). Convierte una cadena en entero.
+
