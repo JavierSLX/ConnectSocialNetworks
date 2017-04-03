@@ -28,3 +28,23 @@
 >> Condicional if-else
 > Integer.parseInt(string). Convierte una cadena en entero.
 
+------------- LECCION 4 --------------
+
+------------- LECCION 5 --------------
+>> Manejo de Excepciones
+> La clase Throwable maneja todas las excepciones registradas
+> RuntimeException (ArrayIndexOutOFBoundsException, IllegalArgumenteException, NumberFormatException)
+> InterruptedException
+> IOException (EOFException, SocketException, FileNotFoundException)
+> La palabra clave "try" es el bloque de código donde puede ocurrir una excepción.
+> La palabra clave "catch" es donde se puede gestionar una excepción determinada.
+> Un bloque "finally" encierra código que se ejecuta después del bloque "try" sea que ocurra o no la excepción, después de que se ejecuta el bloque "catch", no es obligatoria.
+
+>> Excepción general
+> La colocación de null en el método showInputDialog de JOptionPane sirve para colocar el diálogo en el centro.
+> La excepción general se usa poniendo en el catch (Exception e)
+
+>> Excepción específica
+> NullPointerException (Es cuando se quiere realizar una operación con un valor nulo)
+> NumberFormatException (Es la excepción que se da cuando se quiere convertir de un valor String a un numérico).
+
