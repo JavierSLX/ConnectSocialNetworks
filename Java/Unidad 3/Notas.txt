@@ -53,3 +53,25 @@
 > Para que la relación de composición se de, debe de estar una clase dentro de la clase que la contiene. En resumen, una clase está contenida en otra.
 
 >> Relación de agregación
+
+---------------- LECCIÓN 3 -------------------
+>> Herencia
+> La herencia es el mecanismo empleado para obtener los atributos y operaciones usando el método de generalización. Tomando como base una relación jerarquica. Clase padre, clase hija. 
+> Herencia simple. Sólo pueden heredar de una sóla clase a la vez.
+
+>> Polimorfismo
+> Hace referencia a la capacidad de un método para tener muchas formas. Es el mecanismo que permitirá definir particularidades. Es parecido a la sobrecarga.
+
+>> Notas sobre herencia y polimorfismo
+> Para que una subclase (o clase hija) pueda heredar métodos de una superclase (clase padre) debe de al definirse acompañarse con la palabra reservada "extends" y luego el nombre de la superclase.
+> La palabra reservada "super" permite a una subclase mandar llamar un método de su superclase, acompañanado con el operador punto (Ej. super.definirElemento()). Para mandar llamar el constructor de la superclase solo es necesario colocar la palabra super y colocar los párametros necesarios del constructor.
+> El término "@Override" acompañado del un nombre de un método de la superclase permite realizar cambios o usarla como propia de una subclase.
+> La palabra reservada "abtsract" se utiliza para crear una clase abstracta (que siempre será una superclase) ningún objeto puede instanciarse de ella. Se usa para que sus subclases que tienen métodos y atributos similares compartan y hereden de ella tales propiedades. Se usa para definir una clase abstracta de la siguiente manera: "public abstract class Ejemplo{};"
+> Un método que contiene la palabra reservada "abstract" significa que cualquier subclase que derive de la superclase puede sobreescribir tal método (y debe obligatoriamente hacerlo).
+> La palabra reservada "instanceof" se usa como condiciones para saber si una clase está referenciada de otra misma (regresa true o false) por ejemplo Empleado instanceof EmpleadoAsalarido regresa true.
+
+---------------- LECCIÓN 4 -------------------
+>> Método constructor
+> Se usa para inicializar los valores del objeto. Lleva el mismo nombre de la clase. Intervienen tanto en la herencia como en el polimorfismo. Se usa la palabra super cuando se quiere llamar un constructor específico.
+>> Getters y Setters
+> El método Setter se acompaña de un método Getter. Existe un Getter por cada atributo, existe un Setter por cada atributo. Los Getter comienza con get... y los Setters comienza con set...
