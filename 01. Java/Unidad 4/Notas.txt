@@ -1,0 +1,38 @@
+---------------- LECCION 1 ---------------------
+
+>>> Estructuras de datos
+>> Una estructura de datos se puede definir como una representación organizada de un conjunto de datos agrupados en una identidad u objeto para facilitar su realización y su manipulación.
+>> Se clasifican de la siguiente manera:
+> Estáticas. Este tipo de estructura de datos especifica su número de elementos en tiempo de compilación y no puede ser modificado en tiempo de modificación. Las estructuras de este tipo son los arreglos unidimensionales y bidimensionales o matrices. 
+> Dinámicas. Estas estructuras no tienen un tamaño específico y la cantidad de elementos pueden ser cambiados en tiempo de ejecución. Las estructuras que encajan en este tipo son las listas enlazadas (normales, de pila y de cola), los árboles, y grafos.
+>> Los arreglos contienen operaciones que permiten manipular sus elementos, los cuales son: Ordenar, Buscar, Insertar, Eliminar, Modificar, entre otras. 
+
+>>> Matrices
+>> En un arreglo bidimensional que cada elemento está posicionado por dos indices. 
+>> Se declaran: int[][] arreglo = new int[2][3];
+>> Para imprimir todos los valores de un arreglo se usa el método Arrays.toString(arreglo).
+
+>>> Clase ArrayList
+>> Se declara ArrayList<Objeto> lista = new ArrayList<>();
+>> Algunos de sus métodos son:
+> size(). Regresa en valor entero la cantidad de elementos que contiene.
+> add(objeto). Agrega un nuevo elemento a la lista.
+> remove(0). Elimina el elemento de la lista en la posición que se le indica.
+> get(0). Regresa el elemento de la posición que se le indica.
+
+>>> Clase LinkedList
+>> Se declara LinkedList<Objeto> lista = new LinkedList<>();
+>> Algunos de sus métodos son:
+> add(objeto). Agrega un nuevo elemento a la lista.
+> size(). Regresa en valor entero la cantidad de elementos que contiene.
+> get(0). Regresa el elemento de la posición que se le indica.
+> addFirst(objeto). Coloca un objeto hasta la primera posición de la lista.
+> addLast(objeto). Coloca un objeto hasta al final de la lista.
+> remove(0). Elimina el objeto que se le indica por su posición.
+> removeFirst(). Elimina el primer objeto de la lista.
+> removeLast(). Elimina el último objeto de la lista.
+
+---------------- LECCION 2 ---------------------
+
+>>> Búsqueda secuencial
+>> 
