@@ -35,4 +35,11 @@
 ---------------- LECCION 2 ---------------------
 
 >>> Búsqueda secuencial
->> 
+>> Un algoritmo de búsqueda es aquel que está diseñado para localizar un elemento con ciertas propiedades en una estructura de datos. Generalmente estas estructuras suelen centrarse en listas o arreglos.
+>> Los tipos de búsquedas son:
+> La búsqueda secuencial y la búsqueda binaria.
+> La búsqueda secuencial se usa cuando el arreglo no está ordenado o no puede ser ordenado. La búsqueda se realiza comparando el elemento con cada uno de ellos secuencialmente, de ahí su nombre. Con cada elemento del arreglo o hasta el final. 
+
+>>> Búsqueda binaria
+>> Se utiliza cuando el arreglo donde queremos localizar un elemento ya está previamente ordenado.
+>> Reduce significativamente las comparaciones debido a las iteraciones que se usan en la búsqueda, se comienza comparando el elemento central con el elemento que se quiere encontrar. Si el elemento es mayor, se descarta la primera mitad en caso contrario se descarta la segunda mitad y así sucesivamente. 
