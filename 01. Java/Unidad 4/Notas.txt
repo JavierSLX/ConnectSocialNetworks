@@ -43,3 +43,4 @@
 >>> Búsqueda binaria
 >> Se utiliza cuando el arreglo donde queremos localizar un elemento ya está previamente ordenado.
 >> Reduce significativamente las comparaciones debido a las iteraciones que se usan en la búsqueda, se comienza comparando el elemento central con el elemento que se quiere encontrar. Si el elemento es mayor, se descarta la primera mitad en caso contrario se descarta la segunda mitad y así sucesivamente. 
+
