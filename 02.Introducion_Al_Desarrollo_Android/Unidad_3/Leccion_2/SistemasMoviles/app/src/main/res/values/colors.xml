@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9839</color>
+    <color name="colorPrimaryDark">#D47624</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="android">#A8CC39</color>
+    <color name="ios">#A9B1B5</color>
+    <color name="windows">#2E90F5</color>
+</resources>

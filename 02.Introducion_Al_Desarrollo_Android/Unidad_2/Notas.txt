@@ -1,0 +1,70 @@
+------------------- LECCIÓN 1 -----------------------
+
+### Introducción al Ambiente de Desarrollo Android
+
+>>> Consideraciones Iniciales
+>> Lo primero para el desarrollo móvil Google nos da un conjunto de conocimiento y herramientas gratuitas, eligiendo el enfoque.
+>> El lenguaje de programación que usa Android es Java para codificar las funciones y métodos, por su máquina virtual llamada ART. Android a pesar de que usa muchos conceptos Java no es exactamente igual. 
+>> Hablando en hardware, no existen los mismos parametros que se usan en una aplicación móvil que en un programa Java.
+>> El concepto para desarrollar aplicaciones en Android es la Programación Orientada a Objetos. 
+
+>>> Características del IDE
+>> Existen Entornos de Desarrollos que ayudan a codificar de manera fácil la plataforma Android, en este caso se usará Android Studio.
+>> Android Studio en el año 2013 fue declarado por Google como el Entorno de Desarrollo oficial para la creación de aplicaciones nativas en Android. 
+>> Se creó para llevar un mejor control y mejorar la lentitud de Eclipse.
+>> En el año 2014 se afianzó en el mercado.
+>> Características:
+> Nueva interfaz.
+> Vistas previas.
+> Soporte en relojes.
+> Importaciones de proyectos de Eclipse.
+> Mejora de Control con Git y Github.
+> Ventajas de codificación en la detección de errores en tiempo real.
+
+------------------- LECCIÓN 2 -----------------------
+
+### Instalación y configuración
+
+>>> Instalación de Android Studio
+>> Hay que tener en cuenta ciertos aspectos antes de instalar el IDE.
+>> Hay que tener instalado el JDK instalado previamente (Java Development Kit) versión 6 o superior.
+
+
+>>> ¿Qué es SDK?
+>> Software Development Kit (Kit de Desarrollo de Software). 
+>> Es obligatoriamente necesario tener instalado el SDK de Android para poder desarrollar aplicaciones nativas. 
+>> Google hace cambios y actualizaciones de manera constante a su SDK.
+>> Un SDK por cada versión de Android es lanzada.
+>> Los paquetes SDK de Android no están añadidos por defecto en IDE Android Studio. 
+>> Los paquetes SDK que necesitamos, dependiendo de su versión agregan un paquete de APIs que contienen Herramientas, Plataformas y Componentes.
+
+------------------- LECCIÓN 3 -----------------------
+
+### Creación de un proyecto en Android Studio
+
+>>> Creación de primera aplicación Android
+>> Para emular una aplicación se tiene que tener instalado el paquete HAXM
+
+------------------- LECCIÓN 4 -----------------------
+
+### Otros métodos de emulación
+
+>>> Métodos alternos de Emulación
+>> Para computadoras lentas, se pueden probar desde dispositivos físicos. 
+>> Se puede conectar el dispositivo desde una aplicación wifi y se puede probar las distintas aplicaciones que se pueden desarrollar.
+
+>>> Prueba por conexión USB
+>> Hay que verificar que los controladores del dispositivo físico esté instalado. Por recomendación se deben instalar 
+
+>>> Prueba por conexión Wifi con IP
+>> Hay que hacerlo desde la terminal dentro del mismo Android Studio.
+>> Cuando se hace por primera vez hay que conectar el dispositivo por USB.
+
+>>> Prueba por conexión Wifi con Plugin
+>> Se descarga desde Plugins descargando ADB WIFI.
+
+------------------- LECCIÓN 5 -----------------------
+
+### Otras herramientas de Android Studio
+
+>>> Cambiar la apariencia de Android Studio.

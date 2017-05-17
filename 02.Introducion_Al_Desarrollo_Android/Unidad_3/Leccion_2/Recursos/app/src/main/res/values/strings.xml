@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Deportes</string>
+    <string name="futbol">Fútbol</string>
+    <string name="tenis">Tenis</string>
+    <string name="baloncesto">Baloncesto</string>
+</resources>

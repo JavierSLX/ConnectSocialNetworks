@@ -1,0 +1,46 @@
+------------------- LECCIÓN 1 -----------------------
+
+### Introducción a las librerías
+
+>>> Conceptos claves y funcionalidades de las librerías.
+>> La mayoría de las plataformar proveen librerías, de estas se esperan facilitar las funcionalidades de una aplicación.
+>> Ayudan mucho a simplificar código.
+>> Una librería es como una plantilla, ayuda a desarrollar un elemento sin hacerlo completamente.
+>> La librería contiene métodos que pueden ser reutilizados en una aplicación.
+>> Las librerías pueden implementar métodos en cualquier parte del proyecto.
+>> Hay dos tipos de librerías: las estáticas y las dinámicas.
+>> Una librería estática es una librería que se copia a nuestro programa cuando se compila.
+>> Una vez que corre el programa, la librería ya no tiene funcionalidad. Puede ser borrada después de ello, y el programa puede seguir funcionando.
+>> El programa solo copia las partes que necesita de la librería.
+>> Las librerías dinámicas no se copian al programa al compilarse. Aquí, al ejecutarse, cada vez que el programa necesite de un método, lo buscará en la librería. 
+>> Al borrar la librería, el programa indicará un error ya que no encontrará los trozos de código que necesita.
+>> Toda librería ofrece una interfaz de tipo API. 
+>> Las librerías dinámicas se podría decir que son librerías externas que se usan en los proyectos.
+>> El tamaño de nuestro proyecto puede ser mayor al incluir librerías dinámicas.
+
+>>> ¿Qué es una librería?
+>> Las librerías son la base de un proyecto lógico. 
+>> Una librería es en sí una biblioteca es un kit de herramientas de software pequeño y autónomo que ofrece una función específica.
+
+>>> Diferencia entre Framework y Librería
+>> Un framework es un entorno de ambiente de trabajo de desarrollo el cual facilita el desarrollo de aplicaciones dando soporte. Un framework contiene una colección de librerías. 
+>> La ventaja es compatibilidad de lenguajes, transparencia de proyectos de plataforma a plataforma, portabilidad de Arquitectura, integración con múltiples dispositivos, desarrollo de aplicaciones de manera más sencilla ya que cuenta con los componentes necesarios incluidos, reutilización de código y maneja polítixa de diseño uniforme.
+>> Elegir un framework depende de la necesidad del proyecto a desarrollar así como a no usar ninguno de ellos.
+>> El desarrollo con un framework es menos propenso a errores.
+>> Los frameworks aumenta la productividad.
+>> Una librería dispone funciones y métodos y respeta la API que se usa y un framework da un conjunto de elementos de desarrollo para el desarrollo del proyecto. Un framework es una estructura donde encaja el codigo a desarrollar.
+
+------------------- LECCIÓN 2 -----------------------
+
+### Crear e implementar librerías
+
+>>> Creación de Librerías
+>> La estructura de una librería es parecida a la de un proyecto común de Android. El cual se pueden encontrar ficheros .jar.
+>> La manera más práctica de agregar una librería es agregando un módulo a un proyecto de Android Studio. Para esto se hace yendo a la opción New > New Modulo (Menú "File"), después se elige la opción Android Library para indicar que es una librería y luego se le da un nombre para identificarla, y al final se elige la opción "Add no activity" y se presiona Finish.
+>> Después se agrega una dependencia al Gradle, y se escribe: compile project(':librería') o bien se puede copiar la librería a una carpeta de nuestro proyecto Android llamado libs y escribir la línea en Gradle Compile file('libs.milibreria.jar')
+
+>>> Importar librerías
+>> Android Studio está configurado para tomar dependencias de Maven Central Repository, en este repositorio se encuentran gran cantidad de librerías que se pueden usar en el proyecto.
+>> Android Studio compila con Gradle los recursos que se utilizarán con el proyecto. Un archivo pueden contener varios módulos que se agrupan en build.gradle.
+>> Los pasos son los siguientes: Agregar un módulo de dependencia a este proyecto haciendo clic derecho en este, en open module settings, dirigirse a la sección de módulos, seleccionar nuestro proyecto, dirigirse a dependencias y proceder a añadir una librería.
+

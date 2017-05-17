@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Manifest</string>
+    <string name="main">Principal</string>
+    <string name="secundario">Secundario</string>
+</resources>

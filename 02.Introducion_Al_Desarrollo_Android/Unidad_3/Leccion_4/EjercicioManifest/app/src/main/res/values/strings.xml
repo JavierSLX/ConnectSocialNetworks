@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EjercicioManifest</string>
+    <string name="principal">Inicio</string>
+    <string name="mensaje">Bienvenidos</string>
+    <string name="telefono">Smartphone</string>
+    <string name="tableta">Tablet</string>
+    <string name="tv">TV</string>
+</resources>

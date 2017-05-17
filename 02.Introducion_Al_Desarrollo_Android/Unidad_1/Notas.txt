@@ -1,0 +1,199 @@
+------------------ LECCION 1 ------------------------
+### Android una visión general
+
+>>> Android: Plataforma de Gran Alcance
+>> Se pueden definir los recursos generales para celulares y los recursos generales para tabletas.
+>> Android se encarga de aplicar los recursos que considere correctos tales como tamaño de la pantalla, densidad, configuración regional entre otros.
+>> Resumido: Android optimiza fácilmente un único formato para celulares, tabletas y otros dispositivos.
+
+>>> Descargas en Google Play
+>> Durante el año 2015 se obbtuvieron alrededor de 200 millones de descargas, lo que su competencia obtuvo la mitad que solo constó de 100 millones.
+
+>>> Introducción versiones de Android
+>> Android ha evolucionado de acuerdo a las necesidades del usuario.
+>> Android ha sido lanzado comercialmente el 2008.
+>> Android hace cambios de acuerdo a las limitaciones de hardware.
+>> Versiones: Apple Pie, Banana Bread, Cupcake, Donut, Éclair, Froyo, Gingerbread, Honeycomb, Ice Cream Sandwich, JellyBean, KitKat, Marshmallow.
+
+>>> Versiones de Android
+>> La primera aproximación de una versión Android fue conocida como Android Beta. Fue lanzada en el año 2007.
+>> En el año 2008 se lanzó la versión 1.0.
+> Notificaciones en menú desplegable.
+> Widgets de escritorio.
+> Y Android Market, lo que en un futuro se convertiría en Google Play. En la primera versión todas las aplicaciones eran gratuitas.
+> Google Mail.
+> Calendar.
+> Y se implementaron funcionalidades para la cámara de los dispositivos.
+>> Android 1.1. Se lanzó en febrero de 2009.
+> Sólo se implementó para un equipo llamado HTC Dream.
+> Google Maps.
+> Teclado numérico
+>> Android 1.5. Se lanzó en abril de 2009.
+> Predicción de texto.
+> Funcionalidad de grabación y video.
+> Nuevo soporte de bluetooht para auriculares.
+>> Android 1.6.
+> El cambio más notable fue Android Market. Fue cambiado el diseño.
+> Fue añadida la opción de aplicaciones de pago.
+> Fue añadida la galería.
+>> Android 2.0. Momento importante en la historia de Android.
+> Integración de los contactos de las redes sociales.
+> Nuevas funcionalidades para la cámara.
+> Mejoramiento del navegador.
+> Multitouch.
+> Animación 3D.
+>> Android 2.2. Mayo 2010.
+> Afirmó la competencia.
+> Velocidad.
+> Rendimiento.
+> Soporte para Adobe Flash.
+> Mover aplicaciones a SD.
+> Pantalla de inicio.
+>> Versión Gingerbread. Diciembre 2010.
+> Teclado virtual.
+> Voice Actions.
+>> Android 3.0. Febrero 2011.
+> Fragments. Dividir elementos de interfaz.
+> Barra de acción.
+> Gráficos mejorados.
+> Personalizar pantalla de inicio.
+> 3.1 y 3.2 corrección de errores.
+>> Android 4.0. Octubre de 2011.
+> Mas widgets.
+> Panel de notificaciones.
+> Pantalla de bloqueo.
+>> Android 4.1. Junio 2012.
+> Rendimiento.
+> Estabilidad.
+> Perfiles de usuario en tabletas principalmente.
+>> Android 4.4. 2013.
+> Realizar tareas con el sonido de tu voz.
+> Activar reproductor.
+> Gestión de memoria.
+> NFC.
+> Impresiones.
+>> Android 5.0. 2014.
+> Material Design
+> Nueva forma de desplegar notificaciones.
+>> Android 6.0 2015.
+> Soporte de huellas digitales.
+> Mejores controles de permisos.
+> Mayor rendimiento para mejorar batería.
+
+>>> Importancia de las versiones de Android
+>> Compatibilidad. Hay que analizar a la cantidad de usuarios que quieres que llegue tu aplicación.
+>> Siempre hay que considerar como llegar a la mayor cantidad de usuarios y escoger la versión a la que se desarrollará.
+
+>> Significado de las versiones Android
+>> Serie de nombres sigue un patrón. Comienza en orden alfabético. 
+
+------------------ LECCION 2 ------------------------
+### Características de Android
+
+>>> Tipos de Aplicaciones
+>> Dos tipos de aplicaciones que no son nativas en Android: Aplicaciones web, aplicaciones híbridas.
+>> Aplicaciones Web. Aplicaciones orientado al diseño web usando HTML 5, CSS 3 y Javascript.
+>> Aplicaciones híbridas. Una aplicación que puede ser soportada en distintos sistemas. (Netflix, Instagram, Facebook).
+>> Aplicaciones nativas. Son las aplicaciones que solamente son soportadas en un sistema determinado.
+> Ventaja: Tiene acceso por completo a los recursos Android que este ofrece.
+> Desventaja. Sólo puede ser ejecutado en el sistema para el cual fue diseñado.
+
+>>> ¿Por qué Android?
+>> Nos brinda muchos beneficios. Por la gran cantidad de aplicaciones que nos ofrece el sistema. 
+>> Plantea soluciones a problemas diarios abreviando rutinas con herramientas que contiene el sistema.
+
+>>> Código abierto
+>> Esta soportada por una comunidad Open Source. Apoyada por desarrolladores a nivel mundial.
+>> La calidad.
+
+------------------ LECCION 3 ------------------------
+### Arquitectura de Android
+
+>>> Introducción
+>> Evitar bajo nivel. Separa al usuario final de los recursos del sistema y del desarrollador.
+>> Utiliza lo denominado "Recursos por capas".
+>> Las capas son las siguientes:
+> Aplicaciones
+> Armazón de aplicaciones.
+> Librerías y Android Runtime
+> Kernel de Linux.
+>> Se le conoce como arquitectura de tipo pila ya que cada capa depende de la anterior para su perfecto funcionamiento.
+
+>>> El kernel de Linux
+>> Se encuentra en el nivel más bajo de la arquitectura.
+>> Es el núcleo basado en un kernel de Linux.
+>> Un kernel es el corazón de un sistema operativo, es el enlace del hardware y software.
+>> Funciona como el alojador de los distintos drivers del dispositivo.
+>> Gestiona la memoria y la bateria.
+
+>>> Librerías de Android
+>> Es una capa que se encuentra justamente arriba de la capa del Kernel de Linux.
+>> Está compuesta por las librerías nativas de Android.
+>> Están elaboradas en el lenguaje C o C++.
+>> Generalmente son elaboradas por el fabricante.
+>> La principalmente función de las librerías es contener las funciones que puedan ser repetitivas. Evita que se programe varias veces la misma función.
+>> Las principales librerías son:
+> OpenGL: Soporta animaciones y gráficos.
+> Multimedia: Soporta audio, gráficos, etc.
+> WebKit: Soporta navegadores.
+> FreeType: Soporta las fuentes de texto.
+> SQLite: Soporta conexiones a la base de datos.
+
+>>> Android Runtime
+>> Entorno de Ejecución de Android. Se quiso simular el concepto de Máquina Virtual de Java.
+>> Google diseño una máquina virtual llamada "Dalvik" debido a que los dispositivos no podían contener una máquina virtual de Java como tal.
+>> Las aplicaciones son diseñadas en lenguaje Java pero al ser compiladas pasan a un formato de tipo Dalvik.
+>> Dalvik no acepta el formato bytecode de java sino que genera un archivo .dex que no puede ser ejecutado en Java.
+
+>>> Entorno de Aplicaciones
+>> Se encuentran alojadas distintas clases y servicios del dispositivo que pasan por la máquina virtual Dalvik.
+>> Dentro de los componentes más importantes de esta capan se encuentran:
+> Activity Manager. Es el encargado de gestionar la pila y el ciclo de vida de las actividades de nuestras aplicaciones.
+> Windows Manager. Su función es en adecuar los espacios en los que se mostrarán las actividades.
+> Content Provider. Este elemento es una librería que contiene un conjunto de información que será distribuido entre las diferentes actividades. Es de suma importancia que permite controlar el acceso a dicha información.
+> Views. Este contiene los elementos que se necesitan para construir las interfaces y en su interior se pueden encontrar botones, listas, controles, navegadores, etc.
+> Notification Manager. Se encarga de administrar las notificaciones cuando el usuario requiere recibir una alerta.
+> Package Manager. En esta librería se gestiona los distintos paquetes del dispositivo además de los que se pueden instalar.
+> Telephony Manager. Permite realizar llamadas o enviar y recibir mensajes de texto.
+> Location Manager. Permite acceder a la posición acerca del dispositivo usando los controles de GPS o redes. Ofrece la posibilidad de utilizar recursos de mapas para dar una ubicación real.
+> Resource Manager. Mediante esta librería podemos administrar los recursos adicionales al código fuente tales como imágenes, sonidos o cadenas de texto.
+> Sensor Manager. Permite utilizar los recursos de hardware de tipo sensores como podometro, etc.
+
+>>> Capa de Aplicaciones.
+>> Es la última capa que se encuentra en la arquitectura de pila.
+>> Hace referencia a todas las aplicaciones: aquellas que pueden contener una interfaz gráfica o no, las que son nativas hechas en lenguaje C o C++, las que son Administradas programadas en Java, las que son Preinstaladas, las Instaladas.
+>> Aquí también se encuentra la denominada Home o Launcher que se encarga de plegar o desplegar todas las aplicaciones hacia el usuario final de las aplicaciones. Puede crear accesos directos o Widgets que el usuario pueda manejar.
+
+------------------ LECCION 4 ------------------------
+### Componentes de las aplicaciones
+
+>>> Conociendo los componentes de una aplicación Android.
+>> Un componente es un elemento fundamental para el perfecto funcionamiento de una aplicación Android. Cada uno de los componentes son únicos. Cada uno de los componentes en conjunto componen una aplicación.
+>> En una aplicación Android existen 4 diferentes tipos de componentes con funcionamiento puntuales: Activities (Actividad), Servicios, Proveedores de contenido y Receptores.
+> Activities (Actividades). Es lo que proporciona un espacio de pantalla lo que le permite al usuario interactuar con alguna tarea en específico. Por ejemplo: hacer una llamada, responder un correo, etc. 
+>> Generalmente se realiza en todo el tamaño de la pantalla. En ocasiones distintas actividades se agrupan para realizar una tarea en específico de entre ellas hay una llamada "actividad principal", será la primera que se mostrará al usuario. 
+>> Cuando otra se ejecuta, la actividad anterior se detiene pero no se pierde. El sistema la conserva en una Pila. 
+>> La pila se comporta de tipo LIFO (Último en entrar, primero en salir).
+>> Callbacks. Una actividad puede cambiar dependiendo de si el sistema esta modificando, pausando, etc.
+
+>>> Servicios
+>> Los servicios son un componente que realizan un proceso de ejecución sin necesidad de proporcionar una interfaz gráfica para poder ser realizado. Generalmente estas se realizan en segundo plano.
+>> Si un usuario cambia a otra aplicacion, los servicios se mantienen.
+>> Los servicios pueden ser de dos tipos: Iniciado y vinculado.
+>> Iniciado. Cuando desde otro componente se inicia de manera directa la ejecución de dicho servicio. Incluso si el componente se destruye el servicio puede seguir funcionando.
+>> Vinculado. Se puede decir que cuando un componente de una aplicación se une junto con un servicio para su funcionamiento. Por ejemplo un modelo cliente-servidor. El tiempo de vida depende del tiempo de consumo en el que se está utilizando. Los servicios se ejecutan en el mismo hilo que la aplicación.
+>> Si se va a usar un servicio demasiado pesado, es recomendable crear un hilo diferente para su funcionamiento y no se generen fallos inesperados.
+
+>>> Proveedor de contenido
+>> Estos son los encargados de gestionar la información que se encargarán de ser compartida en las aplicaciones. Dicha información puede ser guardada en el dispositivo o en una base de datos en internet.
+>> Incluso la información puede ser utilizada en otras aplicaciones.
+>> Cualquier aplicación que contiene los permisos puede capturar información o leerla.
+>> También se da el caso en que la información que es leída o modificada, no es compartida con otras aplicaciones, es decir, solo puede ser accedida mediante la aplicación.
+>> El uso de permisos es fundamental ya que se puede limitar de acuerdo a las necesidades y requerimientos.
+
+>>> Receptores de difusión
+>> Este componente hace referencia a los mensajes de difusión que son enviados a todo el sistema. Por lo general, independientemente de la aplicación.
+>> Los receptores de difusión no suelen presentar interfaz gráfica al usuario además no generan mucho gasto de recursos del dispositivo debido a que su función es dar una puerta de entrada de otro componente que requiera el usuario principalmente.
+>> Hay un recurso que puede dar mensajes a todo el sistema el cual es denominado barra de estado. 
+>> La información que se requiera que vea el usuario de manera inmediata puede ser desplegada como una notificación, alertando al usuario que requiera su atención.
+>> Son eventos que informan al usuario acerca de que un proceso o un servicio quiere mostrarte algo.

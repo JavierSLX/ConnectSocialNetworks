@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#CCC</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorFutbol">#9B9999</color>
+    <color name="colorTenis">#C7C7C7</color>
+    <color name="colorBaloncesto">#C7C7</color>
+</resources>

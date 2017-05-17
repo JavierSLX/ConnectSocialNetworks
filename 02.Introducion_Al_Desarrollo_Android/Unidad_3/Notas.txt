@@ -1,0 +1,95 @@
+------------------- LECCIÓN 1 -----------------------
+
+### Estructura de un proyecto Android
+
+>>> Conceptos.
+>> Se necesita conocer la estructura de un proyecto siempre.
+>> Generalmente cuando se crea un proyecto Android se crea una clase Java, donde se codifica su comportamiento además de un archivo xml que contiene la apariencia de la aplicación.
+>> El IDE clasifica los archivos en una sola ruta donde contiene los de su mismo tipo.
+>> Las clases Java están contenidas en app/src/main pero también dentro de los paquetes que nosotros podemos crear.
+>> Android también crea un paquete de pruebas integrado, le ayuda a probar todos los aspectos de su aplicación, los cuales son Android SDK y la Biblioteca de soporte de pruebas.
+
+>>> Conociendo la Estructura de un Proyecto Android
+>> Al abrir el proyecto se crean dos archivos: MainActivity.java que contiene el código java de la aplicación y el archivo activity_main.xml que contiene el aspecto de la aplicación.
+>> Un activity es una clase en java o xml.
+>> Se puede elegir como se puede mostrar la estructura del proyecto, ya sea como estructura Android o como estructura Project como tal.
+>> La primera carpeta del proyecto es llamada manifests, esta contiene un archivo llamado AndroidManifest.mxl que contiene configuraciones que puede editar dependiendo de lo que requiere la aplicación.
+>> La segunda carpeta es llamada java. Contiene todas las clases de nuestra aplicación.
+>> Hay otro paquete es referente a las pruebas de la aplicación.
+>> Otra carpeta es la de recursos (res) que contiene imagenes, iconos, cadenas de texto.
+>> Una de las carpetas de recursos es layout que contiene todas las interfaces o componentes de usuario de la aplicación.
+>> Gradle. Es una herramienta que permite automatizar las aplicaciones.
+
+ ------------------- LECCIÓN 2 -----------------------
+
+### Recursos de un proyecto Android
+
+>>> Características de los Recursos de un Proyecto Android
+>> Carpeta Resources (Res) que contiene todos los recursos de la aplicación (estos son todos los iconos, imágenes, cadenas, layouts, etc. que componen la aplicación).
+>> Se pueden modificar en tiempo de desarrollo, agregar texto, etc.
+>> Los recursos definen el tipo y aspecto de la aplicación, por ejemplo, si la pantalla donde se va a ejecutar la aplicación contiene una pantalla muy grande, se deben de colocar los recursos para aprovechar el espacio del dispositivo. Si el dispositivo tiene una configuración de idioma distinto, se debe de pensar en un recurso de cadena que cambie el texto de la aplicación al lenguaje que le corresponde. 
+>> Es necesario proporcionar diferentes recursos que los que se usan por default.
+>> Accedemos a los recursos por medio de código Java y por medio de los archivos .xml.
+>> Para acceder a los recursos por medio de código de Java se usa la clase R que permite acceder a todos los componentes que se están usando en la aplicación.
+>> Por ejemplo si se tiene una imagen en la carpeta drawable, se accede a ella colocando R.drawable.imagen.
+>> Si se quiere acceder a la misma carpeta pero desde xml, se usa el caracter "@" lo que se usa como @drawable/icono.
+
+>>> Tipos de recursos de un proyecto Android
+>> Los recursos de la carpeta res contiene los siguiente:
+> Drawable. Contiene todas las imagenes usadas en la aplicación. Puede haber también archivos xml que definan imágenes. En está también puede haber carpetas con imágenes de distintos tipos de tamaño, esto con la necesidad de usarse dependiendo de la densidad y tamaño de pantalla.
+> Layout. Interfaces o diseños que se usan en la aplicación de manera visual. Se pueden realizar directamente desde el código xml o de una manera más práctica arrastrando los elementos a la interfaz. Esta define la arquitectura de la interfaz. Estos recursos se van a encontrar en la carpeta res/layout/. También se pueden encontrar varias carpetas dependiendo de la densidad del dispositivo.
+> Mipmap. Es muy similar a drawable solo que está contiene los iconos con los que arranca la aplicación. Igual poseen distintas carpetas.
+> Recursos de color. En estos recursos definimos una lista de colores para nuestra aplicación. Aquí se puede guardar una lista de colores hexadecimales de la aplicación.
+> Recursos Anim. Define un conjunto de propiedades de una animación. 
+> Recursos menú. Es el recurso que contiene los archivos xml referentes a los menú o a la barra del menú de la aplicación. También pueden ser llamados los archivos xml arbitrarios de nuestra aplicación que pueden ser leídos en tiempo de ejecución definidos como Resource.getXML.
+> Recursos Values. Puede cambiar distintas configuraciones de la aplicación como styles.xml, string.xml, dimens.xml o arrays.xml.
+
+>>> Gestionando recursos "String" de un proyecto Android
+>> Para crear layouts en el proyecto, se da clic derecho sobre la carpeta y se agrega.
+
+------------------- LECCIÓN 3 -----------------------
+
+### Gradle
+
+>>> Conociendo Gradle
+>> No sólo se mostrará los directorios de recursos y código de la aplicación sino también se abrirá un directorio llamado Gradle. 
+>> Es una herramienta que nos ayuda con la automatización en la construcción de las aplicaciones.
+>> Una de los usos de Gradle es la verificación del código por ejemplo, antes de compilar de nuevo una aplicación verifica si hubo un cambio antes de decidir si se compila o no.
+>> Hay dos archivos con los que se van a relacionar al desarrollar la aplicación:
+> build.gradle. El primer archivo contiene una serie de comandos. Uno de ellos es "buildscript", dentro de ella encontraremos librerías que contienen los plugins de gradle.
+> También se encontrará la versión SDK con la que se va a compilar la aplicación. El cual se encuentra en el valor de CompileSDKVersion. Es aquí donde se define cual es la versión de la API con la que se compilará la aplicación.
+Por ejemplo, si se quiere compilar con la API 23 se usa la sentencia CompileSDKVersion 23.
+> Otro atributo importante es la sentencia MinSDKVersion. Este especifica la versión de la API mínima que puede ejecutar la aplicación Android.
+> Un atributo que resulta muy importante es VersionName dentro de este atributo el desarrollador especifica el nombre de la versión de la aplicación.
+> Otro de los atributos que se deben conocer es BuildTypes. Este elemento conoce como se debe de construir y empaquetar la aplicación. En este intervienen dos tipos de construcción: Depuración y Liberación. 
+> Otro aspecto que se debe de conocer es Dependencies, dentro de ellas se especifican las librerías que se van a importar e implementar para nuestra aplicación. Dentro de ella se encontrará la llamada Compile fileTree, la cual nos dice que todos los archivos con extensión .jar van a ser compilados o usados. 
+
+>>> Navegando en la herramienta Gradle
+>> Cada vez que se cambia algún archivo Gradle, es necesario sincronizar la herramienta en el proyecto. 
+
+------------------- LECCIÓN 4 -----------------------
+
+### Android Manifest
+
+>>> Conociendo el Android Manifest
+>> El Android Manifest representa información esencial acerca de nuestra aplicación. Es decir, esa información que la aplicación debe de saber antes de ejecutar cualquier código de la aplicación. 
+>> Sólo hay uno en cada proyecto Android. 
+>> Se puede modificar, es decir, agregar sentencias o elementos en él. 
+>> Esas sentencias pueden ser librerías, nombre de la aplicación, permisos necesarios, etc.
+>> El tipo de código es tipo xml.
+>> Etiqueta <manifest>. Como atributos se encuentran el nombre del paquete de la aplicación. 
+>> La etiqueta <aplication> define todos los componentes de la aplicación.
+>> Etiqueta <activity> nos permite declarar una actividad. Debe de haber una por cada actividad del sistema, en ella se encuentran el nombre, el texto que saldrá en el layout, el diseño, la orientación, etc.
+>> Etiqueta <intent-filter> determina el tipo de intención de la aplicación.
+
+------------------- LECCIÓN 5 -----------------------
+
+### Uso de permisos
+
+>>> Uso de permisos
+>> Permisos en Android (<uses-permission>). Son los permisos que necesita la aplicación correctamente.
+>> Es importante que el usuario sepa que servicios va a necesitar la aplicación para ejecutarse.
+>> Estos permisos son definidos por el desarrollador y son definidos en el Android Manifest. Para definirlos debemos usar la etiqueta <uses-permission>
+>> Unos de los permisos más utilizados son los permisos de internet, de camara, contactos, mensajería, llamadas, etc.
+>> Si la aplicación necesita internet para funcionar y no se definen dichos permisos, esta se detendrá.
+>> Ejemplo de como se usa: <uses-permission android:name="android-permission.INTERNET"/>
