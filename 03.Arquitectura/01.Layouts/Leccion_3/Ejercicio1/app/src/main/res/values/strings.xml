@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ejercicio1</string>
+    <string name="titulo">Coffee</string>
+    <string name="bienvenida">Bienvenidos</string>
+    <string name="tutor">Tutor Café</string>
+    <string name="sesion1">1. Sesión 1.</string>
+    <string name="sesion2">2. Sesión 2.</string>
+    <string name="sesion3">3. Sesión 3.</string>
+    <string name="hora1">10:00 am.</string>
+    <string name="hora2">4:00 pm.</string>
+    <string name="hora3">7:00 pm.</string>
+</resources>

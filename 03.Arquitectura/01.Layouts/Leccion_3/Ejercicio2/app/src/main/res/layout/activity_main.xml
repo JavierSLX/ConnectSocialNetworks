@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.javiersl.ejercicio2.MainActivity">
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:src="@drawable/gato"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cambiarFoto"
+        android:layout_toRightOf="@id/foto"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_below="@id/foto"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cambiar"
+        android:layout_below="@id/foto"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/correo"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_below="@id/nombre"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cambiar"
+        android:layout_below="@id/boton1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancelar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guardar"
+        android:layout_toLeftOf="@id/cancelar"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

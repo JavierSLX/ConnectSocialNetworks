@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   tools:context="com.javiersl.ejercicio1.MainActivity"
+    android:rowCount="5"
+    android:columnCount="4"
+    android:background="#000000">
+
+    <ImageView
+        android:src="@drawable/cafe1"
+        android:layout_width="@dimen/imagen_width2"
+        android:layout_height="@dimen/imagen_height1"
+        android:scaleType="centerCrop"
+        android:layout_columnSpan="2"/>
+
+    <ImageView
+        android:src="@drawable/cafe2"
+        android:layout_width="@dimen/imagen_width2"
+        android:layout_height="@dimen/imagen_height2"
+        android:scaleType="centerCrop"
+        android:layout_columnSpan="2"
+        android:layout_rowSpan="2"/>
+
+    <ImageView
+        android:src="@drawable/cafe3"
+        android:layout_width="@dimen/imagen_width1"
+        android:layout_height="@dimen/imagen_height1"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:src="@drawable/cafe4"
+        android:layout_width="@dimen/imagen_width1"
+        android:layout_height="@dimen/imagen_height1"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:src="@drawable/cafe3"
+        android:layout_width="@dimen/imagen_width2"
+        android:layout_height="@dimen/imagen_height2"
+        android:scaleType="centerCrop"
+        android:layout_columnSpan="2"
+        android:layout_rowSpan="2"/>
+
+    <ImageView
+        android:src="@drawable/cafe4"
+        android:layout_width="@dimen/imagen_width2"
+        android:layout_height="@dimen/imagen_height1"
+        android:scaleType="centerCrop"
+        android:layout_columnSpan="2"/>
+
+    <ImageView
+        android:src="@drawable/cafe1"
+        android:layout_width="@dimen/imagen_width2"
+        android:layout_height="@dimen/imagen_height1"
+        android:scaleType="centerCrop"
+        android:layout_columnSpan="2"/>
+
+    <ImageView
+        android:src="@drawable/cafe2"
+        android:layout_width="@dimen/imagen_width1"
+        android:layout_height="@dimen/imagen_height1"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:src="@drawable/cafe4"
+        android:layout_width="@dimen/imagen_width3"
+        android:layout_height="@dimen/imagen_height1"
+        android:scaleType="centerCrop"
+        android:layout_columnSpan="3"/>
+</GridLayout>

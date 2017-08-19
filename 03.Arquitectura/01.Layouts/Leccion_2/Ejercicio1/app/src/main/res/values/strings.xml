@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Actividad 1</string>
+    <string name="hora">12:00</string>
+    <string name="direccion">26 de Julio, Viernes, Bogotá</string>
+    <string name="ciudad1">México D.F. ---------------- 23:00</string>
+    <string name="ciudad2">Santiago ------------------- 23:00</string>
+    <string name="ciudad3">Montevideo ----------------- 23:00</string>
+</resources>

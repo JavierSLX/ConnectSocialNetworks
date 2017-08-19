@@ -1,0 +1,114 @@
+------------------- LECCIÓN 1 -----------------------
+
+### Los layouts o contenedores de Vistas
+
+>>> Introducción a los Layouts
+>> Los layouts son elementos pertenecientes a la interfaz de usuarios también conocida como User Interface (UI). Estos cumplen un rol muy importante pues forman la estructura y organización de todos los demás elementos gráficos pertenecientes a una aplicación.
+>> También se pueden entender como los contenedores de dichos elementos gráficos. 
+>> Los layouts, además de ser los contenedores también determinan la posición en la que son ubicados los elementos de la interfaz gráfica. Por lo tanto, dependiendo del layout que se utilice, así será también la organización de los elementos gráficos. 
+>> Existen distintos tipos de Layouts:
+> FrameLayout. 
+> LinearLayout.
+> RelativeLayout.
+> TableLayout.
+> GridLayout.
+>> Todos estos tipos de Layout se heredan de la clase ViewGroup. Por lo cual en algunos casos, son llamados de esa manera.
+>> La declaración e implementación de los recursos gráficos está separada de la implementación de las funcionalidades de la aplicación.
+>> Esto se hace a través de ficheros externos de formato .xml. Lo cual permite sea mucho más flexible trabajar dichos elementos gráficos. Y al ser este un lenguaje de marcado, es muy similar a construir una página web.
+>> Cada uno de los elementos que compone una interfaz gráfica, se puede interpretar como un rectángulo que ocupa un espacio en la pantalla.
+>> Algunos de los elementos gráficos que componen y organizan los layouts son:
+> TextView. Representa un texto en pantalla.
+> Button. Un elemento clickeable que permiten desencadenar funcionalidades mediante eventos generados en la UI.
+> ImageView. Es un elemento que permite mostrar en pantalla una imagen dentro de los recursos de la aplicación.
+> EditText. Representa una caja de texto. 
+>> Un FrameLayout organiza sus elementos hijos de manera que todos se van organizando en la esquina superior izquierda. Este layout es usualmente usado para cuando un elemento unicamente va a ocupar todo el tamaño del contenedor. 
+
+>>> Propiedades comunes entre Layouts
+>> Todos los elementos gráficos en la interfaz de usuario tienen unas propiedades comunes ya que todos estos se heredan de la clase View. La cual contiene una serie de atributos comunes en cada uno de los componentes visuales. Los layouts no son la excepción en estas propiedades comunes. Ya que ellos también heredan de la clase View, aunque no directamente, sino que lo hacen a través de ViewGroup, la cual es hija de View.
+>> Cuando se crea un proyecto se genera automáticamente un .xml con todo lo gráfico, este contiene un Layout. Las primeras instrucciones que vemos en este documento se encuentra la declaración de un espacio de nombre (namespace) el cual tiene como objetivo especificar que el documento xml se usará para Android, esto se usa a través de xmlns:android="http://schemas.android.com/apk/res/android" donde establecemos que el namespace es llamado "android" y a este se le asigna un valor que sería una URI (tal es una cadena de caracteres que identifica un recurso, en este caso, códigos y librerías con las que trabaja Android).
+>> Una de las propiedades de los layouts y otros view es que corresponden al ancho (layout_width[android:layout_width=""]) y alto (layout_height[android:layout_height=""]). Todos los layouts deben de tener al menos estas dos propiedades para que puedan ser válidos en el documento xml.
+>> Las medidas que se usan para dar el tamaño a estas propiedades no son pixeles, esto debido al tamaño de la pantalla donde se ejecute la aplicación siempre será distinta. Por ello se utilizan los pixeles independientes de la densidad o dp, los cuales mantienen la proporción del tamaño del elemento independientemente de la resolución.
+>> Los márgenes son una de las propiedades en cada uno de estos elementos. En Android existen dos tipos de márgenes:
+> Margen externo.
+> Margen interno.
+>> La propiedad que nos permite ajustar el margen externo  en nuestros elementos gráficos es [android:layout_margin=""], pero esta propiedad nos adiciona un margen de manera general en cada uno de los lados del elemento gráfico. Así que si es necesario ser más específico. 
+>> Encontramos: [android:layout_marginTop=""] para el margen externo de la parte de arriba, [android:layout_marginBottom=""] para el margen externo de la parte de abajo, [android:layout_marginLeft=""] para el lado externo izquierdo y [android:layout_marginRight=""] para el lado derecho.
+>> El funcionamiento del margen interno es similar, es posible adicionar un margen interno de manera general usando la propiedad [android:padding=""].
+>> Para hacerlo en el margen interno de cada lado se usa: [android:paddingTop=""], [android:paddingBottom=""], [android:paddingLeft=""] y [android:paddingRight=""].
+
+>>> Mi primer Layout
+>> match_parent significa el tamaño del contenedor padre.
+
+>>> FrameLayout: Propiedad "layout_gravity"
+>> Dicha propiedad nos permite brindar una dirección u orientación a nuestros elementos gráficos dentro de un layout. 
+>> wrap_content se define como el espacio exacto que se necesita para mostrarse.
+>> fill_parent es toda la medida que contiene el padre.
+>> layout_gravity nos permite cambiar de lugar el elemento a agregar, por ejemplo: android:layout_gravity="center_horizontal"
+>> layout_gravity permite ingresar dos valores separados por una barra horizontal (|).
+
+------------------- LECCIÓN 2 -----------------------
+
+### LinearLayout y sus propiedades
+
+>>> LinearLayout
+>> Este contenedor se identifica por organizar sus elementos en una sola columna o fila, dependiendo la orientación que se le asigne. 
+>> La orientación de LinearLayout es específicada por el atributo android:orientation, esta propiedad toma los valores de vertical u horizontal para aplicar la respectiva organización al mismo.
+>> Cuando ponemos la orientación en vertical sólo podremos agregar elementos en una columna, es decir, uno debajo del otro. De igual manera ocurre con la orientación horizontal debido a que todos los elementos que se agreguen estarán en una sola fila, es decir, uno seguido del otro. 
+>> Una de las propiedades del LinearLayout es la propiedad android:layout_weight, la cual da un valor de importancia de un view en terminos de cuanto espacio va a ocupar dicho view en la pantalla.
+>> android:layout_weight es una propiedad por la cual se puede asignar un grado de importancia en la distribución de espacio en la pantalla.
+
+>>> LinearLayout con orientación vertical
+>> Para hacer el texto más grande en las TextView se usa la propiedad android:textAppearance junto con algún valor por defecto al cual se accede iniciando con el símbolo "?" por ejemplo ?android:textAppearanceLarge.
+>> Para asignar color de fondo se usa android:background con un valor hexadecimal.
+>> La propiedad android:gravity hace referencia al padre.
+
+>>> LinearLayout vertical: Propiedad "layout_weight"
+>> Le asigna un valor de importancia de acuerdo al espacio que ocupará en el layout.
+
+>>> LinearLayout horizontal: Propiedad "layout_weight" 
+>> La propiedad android:hint muestra un texto en un EditText mientras la casilla esté vacía.
+>> La propiedad android:textSize define un tamaño de letra en específico.
+
+------------------- LECCIÓN 3 -----------------------
+
+### RelativeLayout y sus propiedades
+
+>>> RelativeLayout
+>> Organiza los elementos de su interior (también llamados elementos hijos) de manera relativa a sus elementos hermanos con respecto al área del contenedor padre, es decir, el RelativeLayout.
+>> Para entender como RelativeLayout maneja los elementos hay que entender una propiedad que tiene todos los View, que aunque no sea obligatorio usar, la cual se le conoce como "id".
+>> La propiedad ID permite agregar a cada elemento de la interfaz gráfica una identificación con la cual con el RelativeLayout podemos especificar con que elemento de la lista vamos a ubicar otro View.
+>> La sintaxis para declarar un id es la que se muestra a continuación: "android:id="@+id/nombreId". Accedemos a ella mediante el recurso "android", luego para asignar el valor de id se coloca "@" y luego un signo más (+) que significa que se está agregando un nuevo id, después del slash se coloca el nombre del id, por ejemplo: "android:id="@+id/nombreId".
+>> Algunas de las propiedades que permiten organizar los elementos visuales son en un RelativeLayout son:
+> android:layout_alignParentTop. El cual si tiene como valor true, alinea el elemento en la parte de arriba del contenedor.
+> android:layout_alignLeft. EL cual si tiene como valor true, alinea el elemento en la parte de la izquierda del contenedor.
+> android:layout_below. Este valor recibe como valor el id asignado a otro view y como resultado ubica el elemento justo debajo del elemento view asociado al id pasado como valor a la propiedad.
+> android:layout_toRightOf. Esta propiedad también recibe como valor el id asignado a otro view pero esta como resultado ubica el elemento justo en la parte derecha del elemento asociado al id pasado como valor a la propiedad. 
+>> Si se quiere ver las demás propiedades que maneja este layout se puede dirigir al apartado de RelativeLayout.LayoutParams en la documentación oficial de Android a la cual podemos acceder a la página android.developer.com. 
+
+------------------- LECCIÓN 4 -----------------------
+
+### Contenedores de tipo tabular - TableLayout y GridLayout
+
+>>> TableLayout
+>> El TableLayout permite ubicar sus elementos hijos en forma tabular, es decir en filas y columnas.
+>> La estructura del TableLayout está definida por elementos TableRow, los cuales simbolizan la fila, por lo tanto el TableLayout tendrá tantas filas como el TableRow tenga. Luego cada elemento en un TableRow representará una celda o columna. Al final, el TableLayout tendrá un número de columnas igual al TableRow con más elementos. 
+>> El ancho de cada una de las columnas estará dado por elemento con más ancho en cada columna, la propiedad [android:layout_width] es decir el ancho de los TableRow no puede ser modificada de manera predeterminada, sin embargo el atributo [android:layout_height] si puede estar definido por un elemento hijo en el TableRow.
+>> Adicionalmente, a los elementos de los TableRow se les puede aplicar el atributo [android:layout_weight] de igual manera que los LinearLayout para asignar un índice de importancia para cada uno de los elementos de la fila y de esta manera distribuir el ancho. Así mismo para distribuir el alto de las filas también se le puede aplicar una importancia a cada uno de los TableRow de los TableLayout.
+>> Otro de los atributos de estos contenedores es el [android:layout_span] el cual permite que una celda ocupe más de una columna mientrás estén libres.
+>> El atributo [android:stretchColumna="0"] asigna el espacio restante a la columna que se le indica, siempre esta se empieza a contar desde 0. Si se le coloca como valor "*" distribuye el valor restante igual a todas las columnas. Si se quiere que el espacio se distribuya entre varias columnas, estas deben de ser separadas por una coma, por ejemplo: 0, 1 distribuirá el espacio en la primera y la segunda columna.
+>> El atributo [android:shrinkColumns="0"] distribuye el espacio de su contenido tal que si es extenso permita que las columnas no desajusten fuera de la pantalla.
+
+>>> GridLayout
+>> El GridLayout al igual que el TableLayout distribuye sus elementos de forma tabular, es decir, en filas y columnas, la gran diferencia entre estos contenedores es que para la estructura del GridLayout ya no se utilizan otros elementos para simbolizar las filas como es el caso del TableLayout el cual se utiliza en elementos del TableRow.
+>> En el GridLayout se especifica directamente el número de filas y columnas que tendrá dicho contenedor, lo cual se hace a través de sus propiedades [android:rowCount] y [android:columnCount] luego de haber definido el número de filas y columnas, sencillamente se van agregando los elementos dentro del GridLayout y se van ordenando dependiendo del valor de la propiedad [android:orientation], de manera similar a un LinearLayout donde sus valores podrán ser horizontal o vertical hasta que finalmente se complete el núnmero de celdas del GridLayout. Y de igual forma que el TableLayout, un elemento puede tomar el espacio de más de una celda, esto se hace en el GridLayout a través de las propiedades [android:layout_rowSpan] y [android:layout_columnSpan], y en caso de ser necesario también es posible especificar el índice de la fila y columna donde quiera ser ubicado un elemento, para lo cual se utilizan las propiedades [android:layout_row] y [android:layout_column] aunque por lo general no es absolutamente necesario el uso de estas propiedades.
+>> GridLayout contiene una propiedad que permite dar un margen sencillo a los elementos, tal es llamada [android:useDefaultMargins="true"].
+
+------------------- LECCIÓN 5 -----------------------
+
+### El poder de los Layouts - Combinando contenedores.
+
+>>> Combinación de Layouts
+>> Los ViewGroup son contenedores de componentes gráficos o Views los cuales a su vez heredan de la clase View.
+>> Los ViewGroup pueden ser manipulados como cualquier elemento View o como cualquier elemento de la interfaz de usuario, lo cual incluye la adición de este a un contenedor para su posterior organización. Cabe resaltar que cuando utilizamos los Layouts no estamos obligados a utilizar uno solo, podemos hacer uso de los que necesitemos y así mismo incluir uno dentro de otro, obteniendo de esta forma una organización totalmente personalizada y adaptada a nuestras necesidades.
+>> Las principales aplicaciones que usamos hoy en día no hacen uso de un sólo contenedor para organizar sus elementos en sus interfaces de usuario.
+>> La combinación toma un papel importante la creatividad y el ingenio de cada persona.

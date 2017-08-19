@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Gravity</string>
+    <string name="android1">Apple pie</string>
+    <string name="android2">Banana Bread</string>
+    <string name="android3">Cupcake</string>
+    <string name="android4">Donut</string>
+    <string name="android5">Eclair</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ejercicio2</string>
+    <string name="titulo">Editar perfil</string>
+    <string name="cambiarFoto">cambiar foto</string>
+    <string name="cambiar">cambiar</string>
+    <string name="guardar">guardar</string>
+    <string name="cancelar">cancelar</string>
+    <string name="nombre">Juan Pérez</string>
+    <string name="correo">juanperez@gmail.com</string>
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EjercicioBusqueda</string>
+    <string name="titulo">Actividad 1</string>
+    <string name="buscar">BUSCAR</string>
+</resources>

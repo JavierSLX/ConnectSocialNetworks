@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Agregando Producto</string>
+    <string name="codigo">Código</string>
+    <string name="producto">Nombre del producto</string>
+    <string name="peso">Peso (Kgr)</string>
+    <string name="descripcion">Descripción</string>
+    <string name="enviar">ENVIAR</string>
+    <string name="cancelar">CANCELAR</string>
+</resources>

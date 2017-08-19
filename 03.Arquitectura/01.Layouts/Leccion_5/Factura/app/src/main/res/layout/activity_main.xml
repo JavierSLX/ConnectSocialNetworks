@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.javiersl.factura.MainActivity">
+
+
+    <TableLayout
+        android:id="@+id/tabla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <TableRow
+            android:layout_weight="1" android:background="@color/gris">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/titulo1"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/titulo2"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/titulo3"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="@string/articulo1"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="@string/cantidad1"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:gravity="right"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="@string/precio1"
+                android:gravity="right"
+                android:textAppearance="?android:textAppearanceLarge"/>
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="@string/articulo2"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="@string/cantidad2"
+                android:gravity="right"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="@string/precio2"
+                android:gravity="right"
+                android:textAppearance="?android:textAppearanceLarge"/>
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="@string/articulo3"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="@string/cantidad2"
+                android:gravity="right"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="@string/precio3"
+                android:gravity="right"
+                android:textAppearance="?android:textAppearanceLarge"/>
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="@string/articulo4"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="@string/cantidad3"
+                android:gravity="right"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:text="@string/precio4"
+                android:gravity="right"
+                android:textAppearance="?android:textAppearanceLarge"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_below="@id/tabla"
+        android:id="@+id/totales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TableRow android:layout_weight="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Subtotal"
+                android:gravity="right"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/subtotal"
+                android:gravity="right"
+                android:textAppearance="?android:textAppearanceLarge"/>
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Impuestos"
+                android:gravity="right"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/impuestos"
+                android:gravity="right"
+                android:textAppearance="?android:textAppearanceLarge"/>
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Descuentos"
+                android:gravity="right"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/descuentos"
+                android:gravity="right"
+                android:textAppearance="?android:textAppearanceLarge"/>
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:gravity="right"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/total"
+                android:gravity="right"
+                android:textAppearance="?android:textAppearanceLarge"/>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pagar"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelar"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

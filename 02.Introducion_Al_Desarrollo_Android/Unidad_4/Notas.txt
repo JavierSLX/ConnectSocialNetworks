@@ -44,3 +44,81 @@
 >> Android Studio compila con Gradle los recursos que se utilizarán con el proyecto. Un archivo pueden contener varios módulos que se agrupan en build.gradle.
 >> Los pasos son los siguientes: Agregar un módulo de dependencia a este proyecto haciendo clic derecho en este, en open module settings, dirigirse a la sección de módulos, seleccionar nuestro proyecto, dirigirse a dependencias y proceder a añadir una librería.
 
+>>> Crear e implementar librerías
+>> Para importar una librería creada por nosotros, en la vista de Project se da clic derecho a nuestra carpeta del proyecto y se da clic en la opción Open Module Settings, se va a la pestaña de Dependencies y se da clic en la opción "+" y Module Dependency.
+>> Para agregar una librería externa (.jar), se agrega con la opción de File dependency. (Después de agregar el archivo dentro de la carpeta lib del proyecto).
+
+------------------- LECCIÓN 3 -----------------------
+
+### Librerías internas de Android
+
+>>>Librerías útiles de Android
+>> android.media. Es la librería que contiene todos los elementos que una aplicación multimedia. Es una librería muy usada por la camara y por Facebook e Instagram.
+>> android.media.store. Es la librería de almacenamiento de todos los elementos multimedia y el de administración de todos los objetos multimedia así como su administración.
+> MediaStore.audio, MediaStore.video, MediaStore.file y MediaStore.images son algunos ejemplos de los objetos que la librería contiene.
+>> android.location (O Google Location Services). Es la forma en la que una aplicación puede acceder a la localización del dispositivo. 
+>> android.util. Se usa en el 80% de las aplicaciones generales. Proporciona métodos de utilidad común tales como la fecha, la manipulación del tiempo, los codificadores y decodificadores de base 64, métodos de conversión de número y utilidades xml gráficas. Permite manejar objetos de tipo Json además de clases de manipulación de archivos de tipo binario. 
+
+------------------- LECCIÓN 4 -----------------------
+
+### Librerías externas
+
+>>> Librerías externas
+>> La mayoría de estos recursos se usan para resolver peticiones web. De tal manera que se pueda ahorrar la gran masa de código que se usa en esta.
+>> La primera imprensión es muy importante por lo que hay que cuidar la parte gráfica de la aplicación. Para ello se puede usar Vulkan 1.0, este contiene una gran cantidad de métodos que facilitan la creación de juegos y el uso de hardware gráfico por medio de drivers, es básicamente el sucesor de OpenGL.
+>> Se puede realizar de manera asíncrona, es decir la parte gráfica y el uso de hardware por separado, esto por medio de un API llamada AsyncTask, la cual permite ejecutar varios hilos de proceso dejando uno en primer plano y otros en segundo plano.
+>> Picassa permite cargar recursos alojados en la web como por ejemplo una imagen para luego usarla en el proyecto Android. 
+>> OrmLite permite la codificación de administración de base de datos por medio de mapeo objeto-relacional (ORM) o también JSON que permite convertir objetos de JSON en objetos Java.
+>> Retrofit esta permite hacer peticiones Get, Post, Put, Patch, Delete, Head para gestionar parámetros por medio de un servicio web, tal cual se hace con la tecnología SOAP. 
+>> Volley igual que Retrofit sirve para peticiones web siendo que Volley libera el proceso tedioso de hacer parsing permitiendo así ahorrar código y pidiendo sólo el dato por medio de http. 
+
+>>> APIs de Google
+>> Google nos permite usar 3 tipos de APIs que nos permite simplificar la programación de los proyectos, aumentar la base de usuarios y monetizar de manera más eficaz los servicios de Google. En otras palabras, nos permite aumentar la acogida de nuestra aplicación sobre todo en la parte comercial.
+>> Google Analytics nos permite acceder a los datos de visita, de analisis y de estadísticas que nuestra aplicación tiene en base a los usuarios que la usa. Si se integra a la aplicación se obtendrá un panel o consola donde se podrá acceder a todas las estadísticas de la aplicación.
+>> Google Maps, herramienta que permite manejar mapas dentro de nuestra aplicación, se puede usar como si fuera parte o ser el centro de nuestra aplicación.
+>> Google places, sería como un complemento de Google Maps, esta accede a la base de los lugares que se encuentran en los mapas, dando así direcciones, información de negocios o empresas.
+>> Google AdWords, resulta de gran ayuda para agregar palabras claves. Permite mejorar la segmentación de mercados por medio de busqueda de palabras claves. Las aplicaciones deben de estar indexadas dentro del servicio de Google.
+>> Android pay, se usa para monetizar la aplicación y una manera sencilla de generar pagos para nuestras aplicaciones.
+>> Admob, para verificar los pagos de los clientes.
+
+>>>Importando librerías externas
+>> Se copia y pega la API (o el archivo .jar) en la carpeta libs de nuestro proyecto.
+>> Se va a la opción de Open Module Settings (clic derecho sobre el nombre nuestro proyecto), en app y dependencias se agrega file dependency.
+>> Para usar por ejemplo se usa import com.googleapis.maps.*;
+
+------------------- LECCIÓN 5 -----------------------
+
+### Otras librerías y frameworks para Android
+
+>>>Librerías avanzadas de comunicación y hardware
+>> Con frameworks se pueden generar gráficos en nuestra aplicación o librerías externas, Android nos ofrece su librería para el manejo de gráficos, en este caso es la librería OpenGL, pero también ofrece un buen soporte en gráficos 2D y 3D para así ser implementados en gráficos o juegos usando uso de un motor gráfico. Gracias a esta podemos usar gran cantidad de gráficos y manipularlos en nuestro dispositivo. 
+>> OpenGL es compatible con NKD, que es un grupo de herramientas compatibles que permiten interactuar por medio del lenguaje C o C++.
+>> Seguido encontramos las librerías que permiten interactuar los elementos hardware de nuestro teléfono. 
+>> android.hardware, es una librería especializada que nuestro hardware interactue con nuestro software o aplicación, para tal es necesario agregar los permisos en nuestro Manifest y si es necesario dependencias en el Gradle.
+>> Entre las opciones de esta librería podemos acceder a nuestra camara por medio de hardware.camara que es la encargada de manejar la captura por medio de esta.
+>> También podemos manejar los sensores de nuestro teléfono por medio de clase sensor y sensor event. Estas nos permiten usar todos los sensores de nuestro teléfono dependiendo de nuestra versión. 
+>> Otras funcionalidades que tenemos en Android son Android Bluetooth y Android .net.wifi que nos permite establecer redes entre dispositivos o routers cercanos que nos permitirán el acceso a información externa sobre todo a la biblioteca wifi.
+>> También tenemos la biblioteca android.telephony, esta es una librería que nos permite monitorear el estado general de nuestro teléfono como conexión a una red y su intensidad.
+>> android.hardware es una librería que nos permite utilizar los recursos hardware de nuestro teléfono, esto dependerá de nuestra versión de Android y que tantos recursos hardware tenga nuestro teléfono.
+>> Todas estas librerías se importan de la misma manera con el comando "import" en nuestros archivos .java, por ejemplo import android.util.*; el asterisco simboliza que  se importarán todas las clases que contiene la librería sin especificar ninguna.
+
+>>>Librerías avanzadas de localización y multimedia
+>> Se recuerda que hay APIs que permiten manejar la localización de nuestro dispositivo por medio del gps haciendo uso de la triangulación de antenas o de las redes wifi, estas pueden ir en conjunto de la herramienta de mapas y en conjunto con la librería android location y a los servicios de localizacion de Google.
+>> Dicha librería permite saber donde está el usuario lo que permite hacer la aplicación más inteligente y ofrece una mejor y más completa información a un usuario.
+>> android location es una librería o un marco de trabajo que contiene todos los servicios de localización que pueden ser usados en nuestra aplicación. La implementación de esta librería en nuestro proyecto es sencilla, aunque los servicios permiten otros servicios recomendados por Google.
+>> Para implementarlas se debe definir lo que es un location manager. Esta es una clase que proporciona todos los métodos a los que podemos acceder a los servicios de localización y a su vez controlar el hardware de localización de nuestro dispositivo. Estos métodos nos pueden servir por ejemplo para actualizar nuestra aplicación dependiendo de donde nos encontremos, informar de un cambio de zona o mostrar la ubicación actual durante un viaje.
+>> El location manager se complementa a su vez con la super clase abstracta LocationProvider. Esta super clase es la encargada de proporcionar informes temporalmente sobre la ubicación lo cual permite saber de donde está el usuario y de esta manera la aplicación se verá mejor capacitada. Así las aplicaciones que administran personal o de redes sociales ofrecerán una mejor información al usuario.
+>> Cuando se desarrolla una aplicación de localización del usuario el principal actor es el GPS que usa la red de internet, ya sea wifi o datos de un proveedor de telefonía permitiendo el reconocimiento de la zona.
+>> Aunque el GPS no es preciso y depende de la red, es una gran ayuda al momento de manejar contenido y mostrar los lugares donde se encuentra alguien, sin embargo hay que tener en cuenta que este descarga muy rápido el dispositivo.
+>> Finalmente para manejar contenido multimedia se encuentra la librería android.media. En la cual encontramos la manera adecuada de gestionar la camara, además de la reproducción y grabación de audio y video. Esta tiene muchas clases especiales que permite expandir las capacidades de nuestra aplicación, estas clases son especialistas en detectar las caras en mapas de bits llamada FaceDetector, controlar el enrutamiento de audio para el dispositivo o un auricular, y alertas o notificaciones y vibraciones del teléfono (Audiomanager).
+
+>>> Frameworks de Android
+>> Los frameworks tienen la ventaja de que ahorran mucho tiempo de desarrollo y se puede optimizar una aplicación mucho más fácil.
+>> Corona es un framework que permite crea juegos y aplicaciones móviles ricas en funcionalidad, es decir que se cumplen en tiempo corto y todas las librerías que contiene permiten características complejas con una facilidad única. Corona permite un flujo de trabajo muy rápido que está basado en el lenguaje de programación LUA , este lenguaje se usa más que nada en la creación de videojuegos además tiene una gran similitud con los lenguajes Javascript y Actionscript 3, este lenguaje se usa en videojuegos muy famosos como en Angry Birds . A este framework se le suma la agilidad de trabajo, este incorpora una gran cantidad de métodos que nos brinde efectos gráficos incluyendo variables físicas de tiempo y sonido que simplifican la manera de mover, tocar y animar objetos dentro de la pantalla. Lo que se optiene como una mejor funcionalidad a menor tiempo.
+>> Hay casos, en los frameworks que no es necesario desarrollar todo el código especialidad de una funcionalidad específica.
+>> Un framework es B4A (Basic for Android), es una herramienta de tipo IDE que tiene cierto parecido a Visual Basic. Tal framework es capaz de compilar aplicaciones nativas de Android. 
+>> Otro framework es App Inventor que está basado en App Web y que ayuda a programar sin codificar en un entorno de desarrollo.
+>> Appcelerator es un framework que permite crear aplicaciones nativas con una sola base de código javascript.
+>> TheAppBuilder es un framework que permite crear una aplicación por medio de una interfaz sin código, lo cuál facilita un proceso de desarrollo mucho más hágil.
+>> Hay otros como Funigan, Cordoba o Iconic que permite crear aplicaciones híbridas. Esta usa lenguajes orientados a la web para distintas plataformas.
+>> Si buscas usar un framework hay que tratar dependiendo de lo que busques: un juego es recomendable usar corona, una aplicación financiera sería un framework sin código. 

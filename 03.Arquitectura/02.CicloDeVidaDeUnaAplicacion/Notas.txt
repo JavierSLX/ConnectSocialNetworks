@@ -1,0 +1,70 @@
+------------------- LECCIÓN 1 -----------------------
+
+### Activities
+
+>>> Introducción a las Activities
+>> Es un componente básico para el desarrollo de los componentes en Android. El cual representa una pantalla o una ventana con la que nuestros usuarios podrán interactuar. Por lo general una aplicación está compuesta por varias ventanas o activities enlazadas entre sí.
+>> Cada una de estas ventanas tiene asociada a ella un componente visual y un componente lógico (un archivo .xml y un archivo .java). El componente visual compone el código xml que contiene el diseño de los layout y otros elementos gráficos. Por otra parte la implementación lógica está comprendida por una clase java la cual debe heredarse de la clase Activity o cualquier otra subclase de Activity.
+>> Cada aplicación tiene un activity principal comúnmente llamada MainActivity, que la inicia y es la primera que ve el usuario.
+>> Todas las activitys tienen la capacidad de iniciar otra activity siempre que lo necesiten.
+>> Cuando una nueva activity es llamada, pasa a un primer plano y la otra queda pausada, pero su estado es guardado en una pila de activitys.
+>> En código Java, onCreate es el primer método llamado cuando se inicia una Activity, es decir, este es el que crea la Activity. 
+>> Este mismo método utiliza otro llama setContentView el cuál permite cargar la interfaz gráfica de usuario que hayamos definido en un layout. 
+>> Todas las activitys que usará la aplicación, tienen que ser registradas en el archivo Manifest. De manera predeterminada, Android Studio registra en el Manifest la activity con la que se creó el proyecto, es decir, el MainActivity, pero las demás Activitys que se necesiten deben ser registradas por nosotros mismos. 
+
+>>> Estructura de una Activity
+>> Al presionar Alt+Enter sobre una cadena en el activity_main, permite agregarla como valor al archivo strings.xml.
+>> La clase AppCompatActivity es una clase que se hereda de la clase Activity. Todas las clases que se deben de usar se deben de heredar de la clase Activity. Cuando se declara una clase heredada de Activity, se debe de declarar por obligación el método onCreate el cual crea nuestra actividad
+>> El método findViewByID saca el texto de un elemento de un layout dado por su id. Regresa un objeto tipo View.
+>> La clase R contiene todos los que elementos que se usan en el archivo activity.xml.
+>> Se agrega un evento en el botón llamado "onClick".
+
+>>> Navegación a una activity
+>> Se agrega una nueva actividad dando click derecho sobre la carpeta que contiene el nombre completo de la aplicación y seleccionando la opción New y Activity y Empty Activity
+>> Para hacer una navegación a una nueva actividad se debe de usar un objeto de tipo Intent. Se le pasan dos parámetros, la actividad en la que se encuentra y la actividad a la que se navegará. Para referenciar la actividad en la que nos encontramos, se puede usar la palabra reservada "this". Un ejemplo de uso es Intent intent = new Intent(this, Navegacion.class).
+>> Se usa el método "startActivity(intent)" para que la nueva actividad se pueda usar.
+>> intent.putExtra sirve para mandar datos entre actividades, recibe dos parametros, el primero es una llave (cadena) para poder acceder al valor que se pasa y el segundo es el valor que se pasa.
+
+------------------- LECCIÓN 2 -----------------------
+
+### Ciclo de vida
+
+>>> Ciclo de vida de una Activity
+>> Un Activity básicamente puede encontrarse en 3 estados. 
+>> El primer estado se le puede llamar "Running Resumed" (en español llamado "En Ejecución"), es el estado en donde la Activity se encuentra activa y en primer plano en el teléfono.
+>> El segundo estado de un Activity es el "Paused", en este las Activityes entran cuando otra pasa a primer plano pero la aplicación sigue visible. Una activity pausada permanece existente en memoria manteniendo su estado de información, pero esta puede ser descartada o eliminada por el sistema, en casos en donde el espacio en memoria sea requerido por otra aplicación de mayor prioridad. 
+>> El último estado en el que una Activity puede permanecer es el de "Stopped". En él, igual que en el estado anterior la Activity pasa a un segundo plano también por la entrada de una nueva Activity. A diferencia de que este, la Activity pertenece a otra aplicación, por lo que no es tan sencillo regresar a la anterior presionando el botón de atrás.
+>> Por otra parte, los métodos por los que pasa una activity durante su ciclo de vida son 7:
+1. onCreate(). Es el primer método llamado cuando la activity es ejecutada. Es donde suelen crearse los View agregando sus instancias y enlazando objetos a sus componentes gráficos.
+2. onStart(). Este sólo es llamado cuando la activity está próxima a ser visible. 
+3. onRestart(). Es llamado luego de que el activity ha permanecido en el estado Stopped.
+4. onResume(). Este método se ejecuta cuando la activity es visible y se ejecuta en el estado Running.
+5. onPause(). Es llamada cuando otra activity es llamada a primer plano ubicando el activity en estado "Paused". Así mismo este estado es comunmente usado para guardar en memoria el estado parcial de la información y liberar una parte de la memoria mientras esta se encuentra pausada.
+6. onStop(). Llamada cuando la aplicación está próxima a ser destruida o cuando otra actividad a sido llamada a primer plano colocándola en el estado "Stopped". Luego si el usuario decidi regresar a la activity se llama al método onRestart(). 
+7. onDestroy(). Se utiliza un poco antes de que la activity sea destruida o eliminada de la memoria. Este es llamado cuando se finaliza una activity, ya sea utilizando el método finish o cuando el sistema de android determine que el activity está ocupando espacio en la memoria o se necesite espacio para una aplicación de mayor prioridad. Esto suele suceder cuando una activity tiene mucho tiempo inactiva.
+
+>>> Ejercicio ciclo de vida
+>> Para agregar cadenas directamente al archivo string.xml desde el activity.xml se da la combinación de teclas ALT+ENTER.
+>> Para agregar un método override se da la combinación de teclas ALT+INSERT.
+
+>>> Guardar estado
+>> El método onSaveInstanceState(), sirve para guardar información al pasar por el estado Stopped.
+>> El método onRestoreInstanceState(), sirve para recuperar la información que fue guardada en en una llave.
+
+------------------- LECCIÓN 3 -----------------------
+
+### Adapters - ListView
+
+>>> Adapters o adaptadores
+>> Los adapters en Android aplican el patrón de diseño Adapter con la función específica de crear un puente entre la interfaz gráfica y una fuente de datos. Un ejemplo de esto es una estructura de datos.
+>> Para desarrollar Adapters en Android existen unas clases definidas como lo es la clase ArrayAdapter, esta permite crear un puente entre una lista de objetos con la que contemos y un control gráfico como un ListView, con el fin de que esta información se pueda mostrar en pantalla.
+>> No obstante también se puede crear nuestros propios Adapters, para ello tenemos que crear una clase y hacer que esta herede sus comportamientos definidos de la clase BaseAdapter o cualquier subclase de esta, construyendo así las funcionalidades complementarias que se necesitan.
+>> Los elementos donde más se utilizan los Adapters son los componentes de selección ListView, Spinner y GridView donde además existen otros elementos donde también se puede hacer uso de ellos.
+
+>>> Adapters - ListView
+>> Se puede usar un ArrayAdapter<String> donde se le pasan como parámetros al actividad donde se encuentran y luego la plantilla donde se va a mostrar los elementos.
+
+>>> ListView implementado con Adapter Personalizado.
+>> LayoutInflater se usa para inflar el Layout.
+>> Se usa LayoutInflater.from(getContext()) para agregarse dentro del contexto de la aplicación.
+>> Se crea un objeto View item que representa cada elemento del layout y se le asigna con inflater.inflate pidiendo dos parametros, el nombre de la plantilla y el view rout.

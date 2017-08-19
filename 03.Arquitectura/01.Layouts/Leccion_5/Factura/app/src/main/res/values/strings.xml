@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Factura</string>
+    <string name="titulo1">Producto</string>
+    <string name="titulo2">Cantidad</string>
+    <string name="titulo3">Valor Unidad</string>
+
+    <string name="articulo1">Auriculares</string>
+    <string name="articulo2">Celular</string>
+    <string name="articulo3">Cargador</string>
+    <string name="articulo4">Protector</string>
+    <string name="cantidad1">2</string>
+    <string name="cantidad2">1</string>
+    <string name="cantidad3">3</string>
+
+    <string name="precio1">$1500</string>
+    <string name="precio2">$4000</string>
+    <string name="precio3">$1000</string>
+    <string name="precio4">$2000</string>
+
+    <string name="subtotal">$14000</string>
+    <string name="impuestos">$1400</string>
+    <string name="descuentos">$700</string>
+    <string name="total">$14700</string>
+    
+    <string name="pagar">Pagar</string>
+    <string name="cancelar">Cancelar</string>
+</resources>

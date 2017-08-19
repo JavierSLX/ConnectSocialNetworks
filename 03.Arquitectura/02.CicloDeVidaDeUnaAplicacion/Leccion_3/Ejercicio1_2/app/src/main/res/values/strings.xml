@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lista</string>
+    <string-array name="articulos">
+        <item>Computadora</item>
+        <item>Celular</item>
+        <item>Televisor</item>
+        <item>Radio</item>
+        <item>Automóvil</item>
+        <item>Tableta</item>
+    </string-array>
+</resources>

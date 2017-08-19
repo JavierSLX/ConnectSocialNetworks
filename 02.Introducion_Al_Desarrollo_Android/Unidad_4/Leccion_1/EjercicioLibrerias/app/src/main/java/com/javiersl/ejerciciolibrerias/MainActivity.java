@@ -3,7 +3,6 @@ package com.javiersl.ejerciciolibrerias;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-
 import com.javiersl.libreria.Calculador;
 
 public class MainActivity extends AppCompatActivity {

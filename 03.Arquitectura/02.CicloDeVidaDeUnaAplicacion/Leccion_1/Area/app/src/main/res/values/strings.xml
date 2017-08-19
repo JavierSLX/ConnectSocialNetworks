@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Calcular Área</string>
+    <string name="cadena1">Ingrese base</string>
+    <string name="cadena2">Ingrese altura</string>
+    <string name="siguiente">siguiente</string>
+    <string name="rectangulo">calcular área rectángulo</string>
+    <string name="triangulo">calcular área triángulo</string>
+</resources>

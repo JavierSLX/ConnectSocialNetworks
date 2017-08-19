@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EvaluacionFinal</string>
+    <string name="tituloPrincipal">Bienvenida</string>
+    <string name="materialDesign">Material Design</string>
+    <string name="conceptosAvanzados">Conceptos Avanzados</string>
+    <string name="aplicacionesAvanzadas">Desarrollo de Apps Avanzadas</string>
+    <string name="contenidoPrincipal">Bienvenido al curso de Android Avanzado</string>
+    <string name="contenidoDesign">Android Material Design</string>
+    <string name="contenidoConceptos">Conceptos Avanzados de Android</string>
+    <string name="contenidoAplicaciones">Desarrollo de Aplicaciones Avanzadas en Android</string>
+</resources>

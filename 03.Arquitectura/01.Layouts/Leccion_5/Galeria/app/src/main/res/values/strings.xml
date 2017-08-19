@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Galeria</string>
+    <string name="nLeon">Nombre: León</string>
+    <string name="eLeon">Especie: Felino</string>
+    <string name="nPato">Nombre: Pato Esmeralda</string>
+    <string name="ePato">Especie: Ave</string>
+    <string name="nPez">Nombre: Pez Payaso</string>
+    <string name="ePez">Especie: Pez</string>
+</resources>

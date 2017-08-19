@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.javiersl.ejercicio1.MainActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/cafe3"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="@string/bienvenida"
+        android:textSize="34sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="@string/tutor"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@id/imagen"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/sesion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="@string/sesion1"
+        android:textSize="24sp"
+        android:layout_below="@id/imagen"
+        android:paddingTop="30dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/sesion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sesion2"
+        android:layout_below="@id/sesion1"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:padding="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="@string/sesion3"
+        android:textSize="24sp"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:layout_below="@id/sesion2"/>
+
+    <TextView
+        android:id="@+id/hora1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="@string/hora1"
+        android:textSize="24sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/imagen"
+        android:paddingTop="30dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/hora2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="@string/hora2"
+        android:textSize="24sp"
+        android:layout_below="@id/hora1"
+        android:layout_alignParentRight="true"
+        android:padding="16dp"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="@string/hora3"
+        android:textSize="24sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/hora2"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"/>
+</RelativeLayout>
