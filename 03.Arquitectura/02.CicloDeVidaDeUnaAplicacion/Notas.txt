@@ -68,3 +68,12 @@
 >> LayoutInflater se usa para inflar el Layout.
 >> Se usa LayoutInflater.from(getContext()) para agregarse dentro del contexto de la aplicación.
 >> Se crea un objeto View item que representa cada elemento del layout y se le asigna con inflater.inflate pidiendo dos parametros, el nombre de la plantilla y el view rout.
+
+------------------- LECCIÓN 4 -----------------------
+
+### Adapters - Spinner y GridView
+
+>>> Más implementaciones de los Adapters
+>> El GridView es un componente de selección que nos permite ubicar sus elementos de manera tabular, similar a como se ordenan sus componentes hijos del TableLayout y el GridLayout. Este al ser un componente de selección permite programar una acción cuando un elemento es presionado. Utiliza la propiedad [android:numColumns] para definir el número de columnas y reparte el espacio en la pantalla con la propiedad [android:strechMode].
+>> Los spinners despliega sus elementos en el momento que es presionado.
+

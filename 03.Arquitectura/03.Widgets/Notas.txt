@@ -1,0 +1,35 @@
+------------------- LECCIÓN 1 -----------------------
+
+### Introducción a Widgets
+
+>>> Concepto de Widget
+>> Es una aplicación en miniatura que puede ser utilizada dentro de otras aplicaciones. Estos también están en la capacidad de recibir información y actualizaciones periódicas dependiendo de la frecuencia con la que se le desea presentar al usuario dicha información.
+
+>>> Tipos de Widget
+>> Existen distintos tipos de Widgets como:
+> Widgets informátivos: Son los que muestrán información importante para el usuario con referencia a una determinada aplicación, dicha información puede variar dependiendo de las actualizaciones que haga de manera periódica. Generalmente cuando el usuario toca el widget, este lo direcciona a la aplicación en cuestión para que continue recibiendo la información. Aquí se encuentran por ejemplo los del clima, el del reloj o de deportes.
+> Widgets de control: Son los que realizan un tipo de función sin necesidad de abrir la aplicación para llevarla a cabo. Generalmente son funciones básicas que no presentan gran carga para el dispositivo. Si se va a realizar algo con gran carga es mejor implementarla dentro de la misma aplicación. Este es por ejemplo un widget de reproductor de música.
+> Widgets de colección: Utilizan listas o colecciones para mostrar la información. Usualmente son utilizados para desplegar gran variedad de elementos con la posibilidad de generar "scroll". Generalmente son utilizados en widget de galería de imágenes y widget de correo.
+> Widget híbrido: Se caracterízan por mezclar características de varios widgets. 
+
+------------------- LECCIÓN 2 -----------------------
+
+### Creación de Interfaz de Usuario
+
+>>> Creación de Layouts
+>> Para la construcción de widget se deben considerar ciertas limitaciones y el origen de estas se debe al uso de las clases llamada RemoteViews, estas clases son la base de todo archivo Layout.
+>> A partir de los RemoteViews se pueden crear los distintos elementos de la interfaz.
+>> De acuerdo con estos se pueden usar los FrameLayout, LinearLayout, RelativeLayout y GridLayout.
+>> En cuanto a los elementos básicos encontramos los siguientes: Button, ImageButton, ImageView, TextView y ListView.
+>> También se pueden encontrar elementos un poco más complejos como AnalogClock, Chronometer, ProgressBar, GridView, ViewFlipper, StackView y AdapterViewFlipper.
+>> Las clases descendientes de las mencionadas anteriormente no son soportadas.
+
+>>> Creación de Layouts en Android Studio
+>> En lugar de "dp" se usa "sp" para colocar los valores de texto en Android Studio.
+
+------------------- LECCIÓN 3 -----------------------
+
+### Estructura e implementación
+
+>>> Introducción a la creación de XML
+>> Se debe crear un archivo XML que se encarga de las propiedades y características de como se comportará el widget. Dicho XML utilizará un sólo elemento para definir todas estas características, un AppWidgetProviderInfo

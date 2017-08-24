@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">EjercicioAdapters</string>
+
+    <string-array name="culturas">
+        <item>China</item>
+        <item>Roma</item>
+        <item>Griega</item>
+        <item>India</item>
+        <item>Japonesa</item>
+    </string-array>
+
+    <string-array name="lugares">
+        <item>Templo Fuzhou</item>
+        <item>Templo Gótico</item>
+        <item>Templo Magna</item>
+        <item>Taj Mahal</item>
+        <item>Templo Narita Zen</item>
+    </string-array>
+
+    <string-array name="fotos">
+        <item>@drawable/china</item>
+        <item>@drawable/gothic</item>
+        <item>@drawable/griega</item>
+        <item>@drawable/india</item>
+        <item>@drawable/japonesa</item>
+    </string-array>
+</resources>
