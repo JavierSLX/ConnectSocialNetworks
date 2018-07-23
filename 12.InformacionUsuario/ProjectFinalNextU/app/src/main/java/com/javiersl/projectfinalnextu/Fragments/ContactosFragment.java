@@ -1,7 +1,6 @@
-package com.javiersl.projectfinalnextu.Fragments;
+package com.javiersl.projectfinalnextu.fragments;
 
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -11,6 +10,7 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,8 +18,8 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.javiersl.projectfinalnextu.Adapters.ContactoAdapter;
-import com.javiersl.projectfinalnextu.Entidades.Contacto;
+import com.javiersl.projectfinalnextu.adapters.ContactoAdapter;
+import com.javiersl.projectfinalnextu.entidades.Contacto;
 import com.javiersl.projectfinalnextu.R;
 
 import java.util.ArrayList;
@@ -45,6 +45,9 @@ public class ContactosFragment extends Fragment
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState)
     {
         super.onViewCreated(view, savedInstanceState);
+
+        ActionBar toolbar = ((AppCompatActivity)getActivity()).getSupportActionBar();
+        toolbar.setSubtitle("Configuración");
 
         listView = (ListView)view.findViewById(R.id.listView);
         FloatingActionButton btGuardar = (FloatingActionButton)view.findViewById(R.id.btGuardar);

@@ -1,4 +1,4 @@
-package com.javiersl.projectfinalnextu.Adapters;
+package com.javiersl.projectfinalnextu.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.javiersl.projectfinalnextu.Entidades.Contacto;
+import com.javiersl.projectfinalnextu.entidades.Contacto;
 import com.javiersl.projectfinalnextu.R;
 
 import java.util.List;

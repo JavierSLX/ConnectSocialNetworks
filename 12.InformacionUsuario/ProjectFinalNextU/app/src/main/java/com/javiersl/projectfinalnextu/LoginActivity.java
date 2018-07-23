@@ -7,6 +7,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
@@ -54,6 +55,10 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
         if(localizacion != PackageManager.PERMISSION_GRANTED || contactos != PackageManager.PERMISSION_GRANTED)
             ActivityCompat.requestPermissions(this, PERMISOS, REQUEST_CODE);
+
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setSubtitle("Inicio de sesión");
 
         //Checa si se está logeado en Facebook (si es así, se deslogea)
         if (AccessToken.getCurrentAccessToken() != null)
@@ -143,6 +148,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         super.onResume();
 
         //Comienza el tracking
+        setTitle("Asistente de Seguridad");
         profileTracker.startTracking();
     }
 

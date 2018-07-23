@@ -1,4 +1,4 @@
-package com.javiersl.projectfinalnextu.Entidades;
+package com.javiersl.projectfinalnextu.entidades;
 
 /**
  * Created by JavierSL on 22/07/2018.

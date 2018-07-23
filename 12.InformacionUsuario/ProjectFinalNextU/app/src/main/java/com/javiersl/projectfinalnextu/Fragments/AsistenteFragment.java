@@ -1,9 +1,10 @@
-package com.javiersl.projectfinalnextu.Fragments;
+package com.javiersl.projectfinalnextu.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -51,6 +52,9 @@ public class AsistenteFragment extends Fragment
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState)
     {
         super.onViewCreated(view, savedInstanceState);
+
+        ActionBar toolbar = ((AppCompatActivity)getActivity()).getSupportActionBar();
+        toolbar.setSubtitle("Inicio");
 
         TextView txtUsuario = (TextView)view.findViewById(R.id.txtUsuario);
         FloatingActionButton btContactos = (FloatingActionButton)view.findViewById(R.id.btContactos);
